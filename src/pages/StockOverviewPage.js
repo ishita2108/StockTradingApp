@@ -5,7 +5,6 @@ import AutoComplete from "../components/AutoComplete"
 const StockOverviewPage = () => {
   return (
     <main>
-    <div>StockOverviewPage</div>
     <AutoComplete/>
     <StockList/>
     </main>
