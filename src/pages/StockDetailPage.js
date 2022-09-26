@@ -7,7 +7,7 @@ const formatData = (data) =>{
   return data.t.map((el,index) => {
     return {
       x: el*1000,
-      y:data.c[index]
+      y:Math.floor(data.c[index])
     }
   })
 }
@@ -24,6 +24,8 @@ const StockDetailPage = () => {
         oneDay = currentTime - 2 * 60 * 60 * 24;
       } else if (date.getDay() === 0) {
         oneDay = currentTime - 3 * 60 * 60 * 24;
+      }else if (date.getDay() === 1) {
+        oneDay = currentTime - 4 * 60 * 60 * 24;
       } else {
         oneDay = currentTime - 60 * 60 * 24;
       }

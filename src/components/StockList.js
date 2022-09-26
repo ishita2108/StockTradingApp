@@ -22,7 +22,7 @@ const StockList = () => {
             });
           })
         );
-        console.log(responses);
+        //console.log(responses);
         const data = responses.map((response) => {
           return {
             data: response.data,
